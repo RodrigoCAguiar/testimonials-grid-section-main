@@ -1,0 +1,159 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+html {
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  background-color: hsl(210, 46%, 95%);
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.student img {
+  border-radius: 50%;
+  width: 35px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.jonathan .container .student img {
+  border: none;
+}
+
+.patrick .container .student img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+
+.student p {
+  font-size: 15pxs;
+  color: white;
+  margin-left: 17px;
+  line-height: 1.15rem;
+}
+
+.student p a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.student p a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.quote {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.testimonial {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 75%);
+  text-align: left;
+  line-height: 20px;
+}
+
+.student {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding: 12px 27px 0 35px;
+}
+
+.container p:nth-of-type(1) {
+  font-weight: 600;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.box.daniel {
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: right 9% bottom 100%;
+  background-color: hsl(263, 55%, 52%);
+  border-radius: 10px;
+}
+
+.box.jonathan {
+  background-color: hsl(217, 19%, 35%);
+  border-radius: 10px;
+}
+
+.box.patrick {
+  background: hsl(219, 29%, 14%);
+  border-radius: 10px;
+}
+
+.box.kira,
+.box.jeanette {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.box.kira .container .quote,
+.jeanette .container .quote {
+  color: hsl(217, 19%, 35%);
+}
+
+.box.kira .container .testimonial,
+.jeanette .container .testimonial {
+  color: hsl(217, 19%, 35%);
+}
+
+.box.kira .container .student p,
+.jeanette .container .student p {
+  color: hsl(217, 19%, 35%);
+}
+
+.box.kira .container .student a,
+.jeanette .container .student a {
+  color: hsl(217, 19%, 35%, 50%);
+}
+
+@media (min-width: 900px) {
+  body {
+    padding: 50px 100px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: aqua;
+  }
+
+  .box.daniel {
+    grid-column: 1/3;
+  }
+
+  .box.kira {
+    grid-column: 4;
+    grid-row: 1/3;
+  }
+
+  .box.patrick {
+    grid-column: 2/4;
+  }
+}
