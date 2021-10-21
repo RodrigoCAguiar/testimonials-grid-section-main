@@ -9,7 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 
 html {
-  padding: 0;
+  padding: 10px 10px;
   overflow-x: hidden;
 }
 
@@ -135,13 +135,14 @@ main {
 
 @media (min-width: 900px) {
   body {
-    padding: 50px 100px;
+    padding: 100px 0px;
   }
 
   main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    color: aqua;
+    width: 1250px;
+    margin: 0 auto;
   }
 
   .box.daniel {
